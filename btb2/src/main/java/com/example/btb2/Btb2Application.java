@@ -1,0 +1,13 @@
+package com.example.btb2;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Btb2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Btb2Application.class, args);
+	}
+
+}
