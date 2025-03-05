@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Job Count</title>
+</head>
+<body>
+<h2>Số lượng người theo nghề nghiệp</h2>
+<table border="1">
+    <tr>
+        <th>Nghề nghiệp</th>
+        <th>Số lượng</th>
+    </tr>
+    <tr th:each="entry : ${jobCount}">
+        <td th:text="${entry.key}"></td>
+        <td th:text="${entry.value}"></td>
+    </tr>
+</table>
+</body>
+</html>
