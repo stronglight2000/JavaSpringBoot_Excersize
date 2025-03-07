@@ -4,6 +4,7 @@ import com.example.demo4.db.PeopleDb;
 import com.example.demo4.model.People;
 import com.example.demo4.repository.PeopleRepository;
 import com.example.demo4.service.PeopleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -15,6 +16,7 @@ import java.util.stream.Collectors;
 public class PeopleServiceImpl implements PeopleService {
     private PeopleRepository peopleRepository;
 
+    @Autowired
     public void PeopleService(PeopleRepository peopleRepository) {
         this.peopleRepository = peopleRepository;
     }
