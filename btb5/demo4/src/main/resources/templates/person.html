@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>Người liên quan</h2>
+<div th:if="${relatedPeople.isEmpty()}">
+    <p>Không có người liên quan</p>
+</div>
+<ul th:unless="${relatedPeople.isEmpty()}">
+    <li th:each="related : ${relatedPeople}">
+        <a th:href="@{/person/{id}(id=${related.id})}">
+            <span th:text="${related.fullname}"></span> -
+            <span th:text="${related.job}"></span>
+        </a>
+    </li>
+</ul>
+</body>
+</html>

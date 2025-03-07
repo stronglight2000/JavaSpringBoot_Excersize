@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Longest Name</title>
+</head>
+<body>
+<h2>Người có tên dài nhất</h2>
+<p th:if="${longestName}" th:text="${longestName.fullname}"></p>
+</body>
+</html>
