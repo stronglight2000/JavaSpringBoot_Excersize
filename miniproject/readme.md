@@ -5,7 +5,7 @@ Dự án này là một ứng dụng web hiển thị danh sách sản phẩm, c
 
 ## 🚀 Chức năng chính
 ✔️ Hiển thị danh sách sản phẩm dưới dạng card
-    ![Mô tả](Java_SpringBoot Exersize\miniproject\images\product1.PNG)
+    ![Mô tả ảnh](https://github.com/stronglight2000/JavaSpringBoot_Excersize/blob/main/miniproject/images/product1.PNG?raw=true)
 ✔️ Chức năng tìm kiếm theo tên sản phẩm  
     ![Mô tả ảnh](images/search.png)
 ✔️ Xem chi tiết sản phẩm  
