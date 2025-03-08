@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Product List</h2>
+
+    <!-- Form tìm kiếm -->
+    <form th:action="@{/}" method="get">
+        <input type="text" name="keyword" placeholder="Search products..." th:value="${keyword}">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="product-grid">
+        <div class="product-card" th:each="product : ${products}">
+            <a th:href="@{/products/{id}(id=${product.id})}">
+                <img th:src="${product.thumbnail}" alt="Product Image">
+            </a>
+            <h3 th:text="${product.name}">Product Title</h3>
+            <p th:text="${product.description}">Product Description</p>
+            <p th:text="'Price: $' + ${product.price}"></p>
+            <p th:if="${product.rating != null}" th:text="'Rating: ' + ${product.rating} + ' ⭐'"></p>
+        </div>
+    </div>
+
+    <!-- Phân trang -->
+    <div class="pagination">
+        <a th:if="${currentPage > 1}" th:href="@{/(page=${currentPage - 1}, keyword=${keyword})}">Previous</a>
+        <span th:text="'Page ' + ${currentPage} + ' of ' + ${totalPages}"></span>
+        <a th:if="${currentPage < totalPages}" th:href="@{/(page=${currentPage + 1}, keyword=${keyword})}">Next</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -13,12 +14,12 @@ import java.time.LocalDate;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class People {
-        int id;
-        String fullname;
-        String job;
-        String gender;
-        String city;
-        int salary;
-        LocalDate birthday;
+    int id;
+    String fullname;
+    String job;
+    String gender;
+    String city;
+    int salary;
+    LocalDate birthday;
 
 }

@@ -20,7 +20,7 @@ public class BookRepositoryImpl implements BookRepository {
     @Override
     public Book findById(String id) {
         for (Book book : BookDb.books) { //Select * from books where id =
-            if(book.getId().equals(id)) return book;
+            if (book.getId().equals(id)) return book;
 
         }
         return null;

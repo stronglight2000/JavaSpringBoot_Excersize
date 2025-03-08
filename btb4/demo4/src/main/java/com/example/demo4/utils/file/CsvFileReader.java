@@ -15,11 +15,13 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 @Slf4j
 @Component("csvFileReader")
 public class CsvFileReader implements IFileReader {
     private static final DateTimeFormatter CSV_DATE_FORMAT = DateTimeFormatter.ofPattern("MM/dd/yyyy");
     private static final DateTimeFormatter TARGET_DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
     @Override
     public List<People> readFile(String filePath) {
         List<People> peopleList = new ArrayList<>();
@@ -65,5 +67,5 @@ public class CsvFileReader implements IFileReader {
     private LocalDate convertDate(String dateStr) {
         return LocalDate.parse(dateStr, CSV_DATE_FORMAT);
     }
-    }
+}
 

@@ -9,22 +9,23 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Slf4j
 @Configuration
 public class InitDb implements CommandLineRunner {
-        private final IFileReader fileReader;
+    private final IFileReader fileReader;
 
     public InitDb(@Qualifier("csvFileReader") IFileReader fileReader) {
-            this.fileReader = fileReader;
-        }
-
-        @Override
-        public void run(String... args) throws Exception {
-            log.info("Start init data");
-            List<People> people = fileReader.readFile("people.csv");
-            log.info("People size: {}", people.size());
-
-            PeopleDb.peopleList = people;
-        }
+        this.fileReader = fileReader;
     }
+
+    @Override
+    public void run(String... args) throws Exception {
+        log.info("Start init data");
+        List<People> people = fileReader.readFile("people.csv");
+        log.info("People size: {}", people.size());
+
+        PeopleDb.peopleList = people;
+    }
+}
 

@@ -11,8 +11,12 @@ import java.util.Optional;
 @Repository
 public interface PeopleService {
     List<People> getAllPeople();
+
     Map<String, List<People>> groupPeopleByCity();
+
     Map<String, Long> groupJobByCount();
+
     List<People> aboveAverageSalary();
+
     Optional<People> longestName();
 }

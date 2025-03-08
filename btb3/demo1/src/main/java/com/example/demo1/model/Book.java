@@ -14,7 +14,6 @@ import org.springframework.web.ErrorResponse;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 
 
-
 public class Book {
     private String id;
     private String title;

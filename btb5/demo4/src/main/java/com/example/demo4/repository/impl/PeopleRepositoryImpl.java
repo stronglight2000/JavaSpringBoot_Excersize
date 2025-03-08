@@ -16,6 +16,7 @@ public class PeopleRepositoryImpl implements PeopleRepository {
     public PeopleRepositoryImpl(CsvFileReader fileReader) {
         this.peopleList = fileReader.readFile("people.csv");
     }
+
     @Override
     public List<People> findAll() {
         return peopleList;

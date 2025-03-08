@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+
 @Component("jsonFileReader")
 @Slf4j
 public class JsonFileReader implements IFileReader {
@@ -17,7 +18,8 @@ public class JsonFileReader implements IFileReader {
         log.info("Json file");
         try {
             final ObjectMapper objectMapper = new ObjectMapper();
-            return objectMapper.readValue(new File(filePath), new TypeReference<List<Book>>() {});
+            return objectMapper.readValue(new File(filePath), new TypeReference<List<Book>>() {
+            });
         } catch (IOException e) {
             log.error("Error reading JSON file: {}", filePath, e);
             return List.of();

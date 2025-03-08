@@ -1,50 +1,302 @@
-[{"id":"01JNEDBJEH904FXJDD90BVG0C8","title":"4 Horsemen of the Apocalypse, The","author":"Mellisent Paragreen","year":2008},
-{"id":"01JNEDBJEKHZYPNZD95HFH68SW","title":"Pinocchio","author":"Venus Silversmid","year":2009},
-{"id":"01JNEDBJEM3XAX97Y6FB6E747F","title":"Plastic Paradise: The Great Pacific Garbage Patch","author":"Eulalie Belverstone","year":1994},
-{"id":"01JNEDBJEN85TPHWHQMSP66CD6","title":"Cool Ones, The","author":"Zak Verrill","year":1996},
-{"id":"01JNEDBJEP3JQ4P0BE1929CX28","title":"Snug as a Bug (U Pana Boga za piecem)","author":"Jakob Spreag","year":2010},
-{"id":"01JNEDBJEQDNPXF1811Q6PTXZN","title":"One Kill","author":"Alain Flanigan","year":2020},
-{"id":"01JNEDBJEQ3TC7VMYJQNKYR6AY","title":"Brother of Sleep (Schlafes Bruder)","author":"Bryon Tuck","year":1990},
-{"id":"01JNEDBJERJ74XJYZDJJ5230CT","title":"Irony of Fate, or Enjoy Your Bath! (Ironiya sudby, ili S legkim parom!)","author":"Lacy Adamkiewicz","year":2009},
-{"id":"01JNEDBJERB47WPGB930HNB0QC","title":"Deep, The (Djúpið)","author":"Krissy Glaysher","year":2007},
-{"id":"01JNEDBJESBC8QAC8BG5518QDX","title":"Within Our Gates","author":"Rustin Karlik","year":2001},
-{"id":"01JNEDBJETYH3VBW665N7QJH2J","title":"War of the Worlds 2: The Next Wave","author":"Lynnett Dommersen","year":2016},
-{"id":"01JNEDBJEVRM5SM1V5MWJ443E4","title":"Shanghai Ghetto","author":"Meridel Marrian","year":2011},
-{"id":"01JNEDBJEWNK1X9R5B6DC810J4","title":"Rock Star","author":"Archy Lambdean","year":1999},
-{"id":"01JNEDBJEXS6ZHR3QRA73SQGP2","title":"Grand Maneuver, The (Les grandes manoeuvres)","author":"Prinz Duke","year":2006},
-{"id":"01JNEDBJEYK77J0Y8F0GV6ZT2S","title":"Transformers","author":"Marin Depke","year":2001},
-{"id":"01JNEDBJEZ5XYB3PZ8RPHDSEAH","title":"Luck by Chance","author":"Margit Bringloe","year":2007},
-{"id":"01JNEDBJEZB86YGWV2JGS0DMC3","title":"1408","author":"Roman de Grey","year":1997},
-{"id":"01JNEDBJFM6D5DRHNBN80EFSH9","title":"Give My Regards to Broad Street","author":"Mildred Thorsen","year":1994},
-{"id":"01JNEDBJFZ05M06D043W7009RH","title":"Naked in New York","author":"Maxim Kochs","year":2001},
-{"id":"01JNEDBJG0H5BDEQ7XJS42EY9E","title":"Bartok the Magnificent","author":"Louise Mushawe","year":2011},
-{"id":"01JNEDBJG1JSP4E03VG3TE4DTX","title":"Kumail Nanjiani: Beta Male ","author":"Padget Milazzo","year":2004},
-{"id":"01JNEDBJG26AD22W1AR9WMS0QQ","title":"The White Haired Witch of Lunar Kingdom","author":"Joelly De Beauchamp","year":2020},
-{"id":"01JNEDBJG3PK5ZBXM3BRK3ZRDJ","title":"Unprecedented: The 2000 Presidential Election","author":"Martelle Joinsey","year":1993},
-{"id":"01JNEDBJG3Z5P2HGJATYPQKQA0","title":"Marksman, The","author":"Tannie Braunstein","year":1997},
-{"id":"01JNEDBJG4995KXH5M2DGA87AT","title":"Road to Wellville, The","author":"Brynna Zannuto","year":2012},
-{"id":"01JNEDBJG4EH4F2880CJZZJN63","title":"Last Casino, The","author":"Wanda Cerie","year":1990},
-{"id":"01JNEDBJG5P980M12Q9PK1N46C","title":"Lightning Bug","author":"Lyda FitzGibbon","year":2013},
-{"id":"01JNEDBJG5V8656QAYYBPJS98T","title":"Ear, The (Ucho)","author":"Carlota Neeves","year":1990},
-{"id":"01JNEDBJG6EYZ5XPCWJQSFZS9T","title":"Zotz!","author":"Daron Yewdale","year":2006},
-{"id":"01JNEDBJG7ZMA1N06QKA79ZNCZ","title":"Steal This Film II","author":"Osbourne Fensome","year":1997},
-{"id":"01JNEDBJG7DPKTGHNQD78D8AW0","title":"According to Spencer","author":"Ryley Gilbeart","year":2014},
-{"id":"01JNEDBJG885CED54VA67TPCQT","title":"Requiem for a Dream","author":"Marchall Shipcott","year":2012},
-{"id":"01JNEDBJG8XXATN850J6PFX2K2","title":"Conversations with Other Women","author":"Rosita Dilger","year":2015},
-{"id":"01JNEDBJG9Y5RP2SM4QR2CGWRN","title":"Fantasma","author":"Mychal Souster","year":1997},
-{"id":"01JNEDBJG9F7HHRE9V9HRJ8GHT","title":"Robin Hood: Prince of Thieves","author":"Sonja Blanchflower","year":2012},
-{"id":"01JNEDBJGAKEDMF3YZJHBG90ST","title":"Prince of Foxes","author":"Herschel Baine","year":1991},
-{"id":"01JNEDBJGADHY1J1BA1WY76SGV","title":"Darkest Hour, The","author":"Abbey Orrey","year":2003},
-{"id":"01JNEDBJGBPA91DMAE7N3A2TJW","title":"Leila","author":"Bessie Olivia","year":2019},
-{"id":"01JNEDBJGBWR9SR1GHMD0KH8GH","title":"Race the Sun","author":"Kirsten Burkill","year":1999},
-{"id":"01JNEDBJGCTFVSMBD8GJJXJ5AW","title":"Wrestling Queens","author":"Allie Tabourier","year":2006},
-{"id":"01JNEDBJGCKCP3RGC4J6PAZXH2","title":"Bamba, La","author":"Omar Kelsell","year":2007},
-{"id":"01JNEDBJGDSPTVSZ95ASW8Y6HS","title":"Sekirei","author":"Auberon Singh","year":2010},
-{"id":"01JNEDBJGEVKE46JFWX9JYRGXA","title":"Bright Lights, Big City","author":"Yanaton Robus","year":2002},
-{"id":"01JNEDBJGE22KC5AC4BGSTJ3VZ","title":"Thick-Walled Room, The (Kabe atsuki heya)","author":"Nonna McRobb","year":2004},
-{"id":"01JNEDBJGFKK336STXQQBQFCHX","title":"Harold and Kumar Go to White Castle","author":"Devina Langfitt","year":2017},
-{"id":"01JNEDBJGFNRNE7J8BYF2VTFMQ","title":"Tulpan","author":"Booth Axtonne","year":1990},
-{"id":"01JNEDBJGG0M4AAW4ZHKB4T54G","title":"Creature from the Haunted Sea","author":"Missie Iamittii","year":1997},
-{"id":"01JNEDBJGGSQS16WP4H5X406CC","title":"Big Green, The","author":"Talbot Presland","year":1997},
-{"id":"01JNEDBJGHGSX1EW07B4WPWRBR","title":"The Vexxer","author":"Florence Itzkovici","year":2005},
-{"id":"01JNEDBJGHC3FZ9JDDDAZRFH1E","title":"Circumstance","author":"Northrop Ligoe","year":2014}]
+[
+  {
+    "id": "01JNEDBJEH904FXJDD90BVG0C8",
+    "title": "4 Horsemen of the Apocalypse, The",
+    "author": "Mellisent Paragreen",
+    "year": 2008
+  },
+  {
+    "id": "01JNEDBJEKHZYPNZD95HFH68SW",
+    "title": "Pinocchio",
+    "author": "Venus Silversmid",
+    "year": 2009
+  },
+  {
+    "id": "01JNEDBJEM3XAX97Y6FB6E747F",
+    "title": "Plastic Paradise: The Great Pacific Garbage Patch",
+    "author": "Eulalie Belverstone",
+    "year": 1994
+  },
+  {
+    "id": "01JNEDBJEN85TPHWHQMSP66CD6",
+    "title": "Cool Ones, The",
+    "author": "Zak Verrill",
+    "year": 1996
+  },
+  {
+    "id": "01JNEDBJEP3JQ4P0BE1929CX28",
+    "title": "Snug as a Bug (U Pana Boga za piecem)",
+    "author": "Jakob Spreag",
+    "year": 2010
+  },
+  {
+    "id": "01JNEDBJEQDNPXF1811Q6PTXZN",
+    "title": "One Kill",
+    "author": "Alain Flanigan",
+    "year": 2020
+  },
+  {
+    "id": "01JNEDBJEQ3TC7VMYJQNKYR6AY",
+    "title": "Brother of Sleep (Schlafes Bruder)",
+    "author": "Bryon Tuck",
+    "year": 1990
+  },
+  {
+    "id": "01JNEDBJERJ74XJYZDJJ5230CT",
+    "title": "Irony of Fate, or Enjoy Your Bath! (Ironiya sudby, ili S legkim parom!)",
+    "author": "Lacy Adamkiewicz",
+    "year": 2009
+  },
+  {
+    "id": "01JNEDBJERB47WPGB930HNB0QC",
+    "title": "Deep, The (Djúpið)",
+    "author": "Krissy Glaysher",
+    "year": 2007
+  },
+  {
+    "id": "01JNEDBJESBC8QAC8BG5518QDX",
+    "title": "Within Our Gates",
+    "author": "Rustin Karlik",
+    "year": 2001
+  },
+  {
+    "id": "01JNEDBJETYH3VBW665N7QJH2J",
+    "title": "War of the Worlds 2: The Next Wave",
+    "author": "Lynnett Dommersen",
+    "year": 2016
+  },
+  {
+    "id": "01JNEDBJEVRM5SM1V5MWJ443E4",
+    "title": "Shanghai Ghetto",
+    "author": "Meridel Marrian",
+    "year": 2011
+  },
+  {
+    "id": "01JNEDBJEWNK1X9R5B6DC810J4",
+    "title": "Rock Star",
+    "author": "Archy Lambdean",
+    "year": 1999
+  },
+  {
+    "id": "01JNEDBJEXS6ZHR3QRA73SQGP2",
+    "title": "Grand Maneuver, The (Les grandes manoeuvres)",
+    "author": "Prinz Duke",
+    "year": 2006
+  },
+  {
+    "id": "01JNEDBJEYK77J0Y8F0GV6ZT2S",
+    "title": "Transformers",
+    "author": "Marin Depke",
+    "year": 2001
+  },
+  {
+    "id": "01JNEDBJEZ5XYB3PZ8RPHDSEAH",
+    "title": "Luck by Chance",
+    "author": "Margit Bringloe",
+    "year": 2007
+  },
+  {
+    "id": "01JNEDBJEZB86YGWV2JGS0DMC3",
+    "title": "1408",
+    "author": "Roman de Grey",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJFM6D5DRHNBN80EFSH9",
+    "title": "Give My Regards to Broad Street",
+    "author": "Mildred Thorsen",
+    "year": 1994
+  },
+  {
+    "id": "01JNEDBJFZ05M06D043W7009RH",
+    "title": "Naked in New York",
+    "author": "Maxim Kochs",
+    "year": 2001
+  },
+  {
+    "id": "01JNEDBJG0H5BDEQ7XJS42EY9E",
+    "title": "Bartok the Magnificent",
+    "author": "Louise Mushawe",
+    "year": 2011
+  },
+  {
+    "id": "01JNEDBJG1JSP4E03VG3TE4DTX",
+    "title": "Kumail Nanjiani: Beta Male ",
+    "author": "Padget Milazzo",
+    "year": 2004
+  },
+  {
+    "id": "01JNEDBJG26AD22W1AR9WMS0QQ",
+    "title": "The White Haired Witch of Lunar Kingdom",
+    "author": "Joelly De Beauchamp",
+    "year": 2020
+  },
+  {
+    "id": "01JNEDBJG3PK5ZBXM3BRK3ZRDJ",
+    "title": "Unprecedented: The 2000 Presidential Election",
+    "author": "Martelle Joinsey",
+    "year": 1993
+  },
+  {
+    "id": "01JNEDBJG3Z5P2HGJATYPQKQA0",
+    "title": "Marksman, The",
+    "author": "Tannie Braunstein",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJG4995KXH5M2DGA87AT",
+    "title": "Road to Wellville, The",
+    "author": "Brynna Zannuto",
+    "year": 2012
+  },
+  {
+    "id": "01JNEDBJG4EH4F2880CJZZJN63",
+    "title": "Last Casino, The",
+    "author": "Wanda Cerie",
+    "year": 1990
+  },
+  {
+    "id": "01JNEDBJG5P980M12Q9PK1N46C",
+    "title": "Lightning Bug",
+    "author": "Lyda FitzGibbon",
+    "year": 2013
+  },
+  {
+    "id": "01JNEDBJG5V8656QAYYBPJS98T",
+    "title": "Ear, The (Ucho)",
+    "author": "Carlota Neeves",
+    "year": 1990
+  },
+  {
+    "id": "01JNEDBJG6EYZ5XPCWJQSFZS9T",
+    "title": "Zotz!",
+    "author": "Daron Yewdale",
+    "year": 2006
+  },
+  {
+    "id": "01JNEDBJG7ZMA1N06QKA79ZNCZ",
+    "title": "Steal This Film II",
+    "author": "Osbourne Fensome",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJG7DPKTGHNQD78D8AW0",
+    "title": "According to Spencer",
+    "author": "Ryley Gilbeart",
+    "year": 2014
+  },
+  {
+    "id": "01JNEDBJG885CED54VA67TPCQT",
+    "title": "Requiem for a Dream",
+    "author": "Marchall Shipcott",
+    "year": 2012
+  },
+  {
+    "id": "01JNEDBJG8XXATN850J6PFX2K2",
+    "title": "Conversations with Other Women",
+    "author": "Rosita Dilger",
+    "year": 2015
+  },
+  {
+    "id": "01JNEDBJG9Y5RP2SM4QR2CGWRN",
+    "title": "Fantasma",
+    "author": "Mychal Souster",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJG9F7HHRE9V9HRJ8GHT",
+    "title": "Robin Hood: Prince of Thieves",
+    "author": "Sonja Blanchflower",
+    "year": 2012
+  },
+  {
+    "id": "01JNEDBJGAKEDMF3YZJHBG90ST",
+    "title": "Prince of Foxes",
+    "author": "Herschel Baine",
+    "year": 1991
+  },
+  {
+    "id": "01JNEDBJGADHY1J1BA1WY76SGV",
+    "title": "Darkest Hour, The",
+    "author": "Abbey Orrey",
+    "year": 2003
+  },
+  {
+    "id": "01JNEDBJGBPA91DMAE7N3A2TJW",
+    "title": "Leila",
+    "author": "Bessie Olivia",
+    "year": 2019
+  },
+  {
+    "id": "01JNEDBJGBWR9SR1GHMD0KH8GH",
+    "title": "Race the Sun",
+    "author": "Kirsten Burkill",
+    "year": 1999
+  },
+  {
+    "id": "01JNEDBJGCTFVSMBD8GJJXJ5AW",
+    "title": "Wrestling Queens",
+    "author": "Allie Tabourier",
+    "year": 2006
+  },
+  {
+    "id": "01JNEDBJGCKCP3RGC4J6PAZXH2",
+    "title": "Bamba, La",
+    "author": "Omar Kelsell",
+    "year": 2007
+  },
+  {
+    "id": "01JNEDBJGDSPTVSZ95ASW8Y6HS",
+    "title": "Sekirei",
+    "author": "Auberon Singh",
+    "year": 2010
+  },
+  {
+    "id": "01JNEDBJGEVKE46JFWX9JYRGXA",
+    "title": "Bright Lights, Big City",
+    "author": "Yanaton Robus",
+    "year": 2002
+  },
+  {
+    "id": "01JNEDBJGE22KC5AC4BGSTJ3VZ",
+    "title": "Thick-Walled Room, The (Kabe atsuki heya)",
+    "author": "Nonna McRobb",
+    "year": 2004
+  },
+  {
+    "id": "01JNEDBJGFKK336STXQQBQFCHX",
+    "title": "Harold and Kumar Go to White Castle",
+    "author": "Devina Langfitt",
+    "year": 2017
+  },
+  {
+    "id": "01JNEDBJGFNRNE7J8BYF2VTFMQ",
+    "title": "Tulpan",
+    "author": "Booth Axtonne",
+    "year": 1990
+  },
+  {
+    "id": "01JNEDBJGG0M4AAW4ZHKB4T54G",
+    "title": "Creature from the Haunted Sea",
+    "author": "Missie Iamittii",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJGGSQS16WP4H5X406CC",
+    "title": "Big Green, The",
+    "author": "Talbot Presland",
+    "year": 1997
+  },
+  {
+    "id": "01JNEDBJGHGSX1EW07B4WPWRBR",
+    "title": "The Vexxer",
+    "author": "Florence Itzkovici",
+    "year": 2005
+  },
+  {
+    "id": "01JNEDBJGHC3FZ9JDDDAZRFH1E",
+    "title": "Circumstance",
+    "author": "Northrop Ligoe",
+    "year": 2014
+  }
+]

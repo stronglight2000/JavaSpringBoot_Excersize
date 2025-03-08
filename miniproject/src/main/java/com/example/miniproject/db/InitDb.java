@@ -1,15 +1,13 @@
-package com.example.demo4.db;
+package com.example.miniproject.db;
 
-import com.example.demo4.model.People;
-import com.example.demo4.utils.file.IFileReader;
+import com.example.miniproject.model.Product;
+import com.example.miniproject.utils.IFileReader;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.ArrayList;
 import java.util.List;
-
 @Slf4j
 @Configuration
 public class InitDb implements CommandLineRunner {
@@ -18,14 +16,12 @@ public class InitDb implements CommandLineRunner {
     public InitDb(@Qualifier("csvFileReader") IFileReader fileReader) {
         this.fileReader = fileReader;
     }
-
     @Override
     public void run(String... args) throws Exception {
         log.info("Start init data");
-        List<People> people = fileReader.readFile("people.csv");
-        log.info("People size: {}", people.size());
+        List<Product> products = fileReader.readFile("product.csv");
+        log.info("Product size: {}", products.size());
 
-        PeopleDb.peopleList = people;
+        ProductDb.productList = products;
     }
 }
-

@@ -6,6 +6,7 @@ import com.example.demo4.utils.file.CsvFileReader;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 @Repository
 public class PeopleRepositoryImpl implements PeopleRepository {
     private final List<People> peopleList;
@@ -13,6 +14,7 @@ public class PeopleRepositoryImpl implements PeopleRepository {
     public PeopleRepositoryImpl(CsvFileReader fileReader) {
         this.peopleList = fileReader.readFile("people.csv");
     }
+
     @Override
     public List<People> findAll() {
         return peopleList;

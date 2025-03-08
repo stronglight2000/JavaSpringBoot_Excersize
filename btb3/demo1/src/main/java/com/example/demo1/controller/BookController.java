@@ -23,28 +23,28 @@ public class BookController {
 
     // Ví dụ với controller trả về view
     @GetMapping("/home") // /home -> url
-    public String getHome(){
+    public String getHome() {
         return "home"; // tên template
     }
+
     //1. Lấy danh sách Book // Get /books
 //    @GetMapping("/books") // HTTP method + API URL
     @GetMapping
-    public ResponseEntity<?> getAllBooks(){
+    public ResponseEntity<?> getAllBooks() {
         List<Book> books = bookService.getAllBooks();
         return ResponseEntity.ok(books);
     }
 
-        // Lấy book theo id
-        @GetMapping("{id}")
-        public ResponseEntity<?> getBookById(@PathVariable String id){
-            Book book = bookService.getBooksById(id);
-            return ResponseEntity.ok(books);
+    // Lấy book theo id
+    @GetMapping("{id}")
+    public ResponseEntity<?> getBookById(@PathVariable String id) {
+        Book book = bookService.getBooksById(id);
+        return ResponseEntity.ok(books);
 
-        }
+    }
 //    public List<Book> getAllBooks() {
 //        return books;
 //    }
-
 
 
     //1. Viết API để trả về danh sachs book. Sắp xếp theo năm giảm dần
@@ -57,10 +57,10 @@ public class BookController {
     //2. Viết API để tìm kiếm các cuốn sách mà trong title có chứa keyword, không phân biệt hoa thường
     //GET: /books/search/{keyword}
     @GetMapping("/search/{keyword}")
-    public ResponseEntity <List<Book>> getBookByKeyWord(@PathVariable String keyword){
-       List<Book> rs = new ArrayList<>();
-        for (Book book: books) {
-            if(book.getTitle().toLowerCase().contains(keyword.toLowerCase())){
+    public ResponseEntity<List<Book>> getBookByKeyWord(@PathVariable String keyword) {
+        List<Book> rs = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().toLowerCase().contains(keyword.toLowerCase())) {
                 rs.add(book);
             }
         }
@@ -70,9 +70,9 @@ public class BookController {
     //3. Viết API để tìm kiếm các cuốn sách có year được sản xuất từ năm A -> năm B
     //GET: /books/startYear/{startYear}/endYear/{endYear}
     @GetMapping("/startYear/{startYear}/endYear/{endYear}")
-    public ResponseEntity<List<Book>> getBookByYear(@PathVariable int startYear, @PathVariable int endYear){
-       List<Book> rs = new ArrayList<>();
-        for (Book book: books) {
+    public ResponseEntity<List<Book>> getBookByYear(@PathVariable int startYear, @PathVariable int endYear) {
+        List<Book> rs = new ArrayList<>();
+        for (Book book : books) {
             if (book.getYear() >= startYear && book.getYear() <= endYear) {
                 {
                     rs.add(book);
