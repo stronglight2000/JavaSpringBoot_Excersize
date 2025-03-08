@@ -5,13 +5,13 @@ Dự án này là một ứng dụng web hiển thị danh sách sản phẩm, c
 
 ## 🚀 Chức năng chính
 ✔️ Hiển thị danh sách sản phẩm dưới dạng card  
-    ![](miniproject\src\main\resources\static\images\product1.PNG)
+    ![Mô tả ảnh](images/product1.png)
 ✔️ Chức năng tìm kiếm theo tên sản phẩm  
-    ![](miniproject\src\main\resources\static\images\search.PNG)
+    ![Mô tả ảnh](images/search.png)
 ✔️ Xem chi tiết sản phẩm  
-    ![](miniproject\src\main\resources\static\images\detail.PNG)
+    ![Mô tả ảnh](images/detail.png)
 ✔️ Phân trang
-    ![](miniproject\src\main\resources\static\images\phantrang.PNG)
+    ![Mô tả ảnh](images/phantrang.png)
 
 ## 🛠️ Công nghệ sử dụng
 - **Java 17**
