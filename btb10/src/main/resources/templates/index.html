@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://movie.techmaster.vn/assets/logo-C2IIl7EL.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-white" href="/">Trang chủ</a>
+                        <a class="nav-link text-white" href="/phim-bo">Phim bộ</a>
+                        <a class="nav-link text-white" href="/phim-chieu-rap">Phim chiếu rạp</a>
+                        <a class="nav-link text-white" href="#">Quốc gia</a>
+                        <a class="nav-link text-white" href="#">Thể loại</a>
+                        <a class="nav-link text-white" href="#">Mua phim</a>
+                    </div>
+                    <div>
+                        <a class="nav-link text-white" href="#">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="py-4">
+        <div class="container">
+            <h4 class="mb-2">Phim HOT</h4>
+            <div class="row">
+                <div class="col-3"  th:each="movie : ${hotMovies}">
+                    <a th:href="'/phim/' + ${movie.id} + '/' + ${movie.slug}">
+                        <div class="movie-item">
+                            <div class="movie-poster rounded overflow-hidden">
+                                <img th:src="${movie.thumbnail}"
+                                     th:alt="${movie.name}">
+                            </div>
+                            <div class="movie-info">
+                                <p class="mt-2 mb-0"th:text="${movie.name}">Nhà bà nữ</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4>Phim lẻ</h4>
+                <a href=""> Xem thêm</a>
+            </div>
+
+            <div class="row">
+                <div class="col-2"  th:each="movie : ${phimLeList}">
+                    <a th:href="'/phim/' + ${movie.id} + '/' + ${movie.slug}">
+                        <div class="movie-item">
+                            <div class="movie-poster rounded overflow-hidden">
+                                <img th:src="${movie.thumbnail}"
+                                     th:alt="${movie.name}">
+                            </div>
+                            <div class="movie-info">
+                                <p class="mt-2 mb-0"th:text="${movie.name}">Nhà bà nữ</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-4 bg-dark-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4>Phim lẻ mới cập nhật</h4>
+                <a href=""> Xem thêm</a>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://homepage.momocdn.net/cinema/momo-upload-api-230117101026-638095470266284448.jpg" alt="Nhà bà nữ">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Nhà bà nữ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://cdnmedia.vietnamplus.vn/images/7255a701687d11cb8c6bbc58a6c80785f99d6536bdc22dca57cc0405bdc7ef57323c8c046cba95ad8e61696b10be6fcfa74f6b1bfe70b3203772c7979020cefa/LoveRosie.jpg" alt="Bồ cũ">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Love,Rosie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://i.ytimg.com/vi/YmnLf0PQXPY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB1_0UontbXH7GZ17r9Uuck_xmcXg" alt="Mục thần ký">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Mục thần ký</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://bna.1cdn.vn/2024/12/17/static-images.vnncdn.net-files-publish-2024-2-17-_422890436-981103440046592-2953485654680463176-n-860.jpeg" alt="Mai">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Mai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://cdn-images.vtv.vn/Uploaded/mylinh/2013_07_19/chan%20hoan.jpg" alt="Chân Hoàn truyện">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Hậu cung Chân Hoàn truyện</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://s-aicmscdn.vietnamhoinhap.vn/thumb/w_1000/vnhn-media/18/8/17/13--n1.jpg" alt="Diên Hy">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Diên Hy Công Lược </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-4 bg-body-secondary">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4>Phim bộ mới cập nhật</h4>
+                <a href=""> Xem thêm</a>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://homepage.momocdn.net/cinema/momo-upload-api-230117101026-638095470266284448.jpg" alt="Nhà bà nữ">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Nhà bà nữ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://cdnmedia.vietnamplus.vn/images/7255a701687d11cb8c6bbc58a6c80785f99d6536bdc22dca57cc0405bdc7ef57323c8c046cba95ad8e61696b10be6fcfa74f6b1bfe70b3203772c7979020cefa/LoveRosie.jpg" alt="Bồ cũ">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Love,Rosie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://i.ytimg.com/vi/YmnLf0PQXPY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB1_0UontbXH7GZ17r9Uuck_xmcXg" alt="Mục thần ký">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Mục thần ký</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://bna.1cdn.vn/2024/12/17/static-images.vnncdn.net-files-publish-2024-2-17-_422890436-981103440046592-2953485654680463176-n-860.jpeg" alt="Mai">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Mai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://cdn-images.vtv.vn/Uploaded/mylinh/2013_07_19/chan%20hoan.jpg" alt="Chân Hoàn truyện">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Hậu cung Chân Hoàn truyện</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movie-item">
+                        <div class="movie-poster rounded overflow-hidden">
+                            <img src="https://s-aicmscdn.vietnamhoinhap.vn/thumb/w_1000/vnhn-media/18/8/17/13--n1.jpg" alt="Diên Hy">
+                        </div>
+                        <div class="movie-info">
+                            <p class="mt-3 mb-0">Diên Hy Công Lược </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tin tức -->
+
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fw-bold">Bài viết mới nhất</h2>
+            <a href="/tin-tuc" class="text-primary">Xem thêm</a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex news-card" th:each="post, iterStat : ${postList}" th:if="${iterStat.index < 2}">
+                    <img th:src="${post.thumbnail}" alt="post" class="me-3" width="150">
+                    <div>
+                        <h5 class="fw-bold">
+                            <a th:href="@{/post/{slug}(slug=${post.slug})}" th:text="${post.title}" class="text-dark"></a>
+                        </h5>
+                        <p class="text-muted"><i th:text="${#temporals.format(post.publishedAt, 'dd/MM/yyyy')}"></i></p>
+                        <p th:text="${post.description}"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex news-card mt-3" th:each="post, iterStat : ${postList}" th:if="${iterStat.index >= 2}">
+                    <img th:src="${post.thumbnail}" alt="post" class="me-3" width="150">
+                    <div>
+                        <h5 class="fw-bold">
+                            <a th:href="@{/post/{slug}(slug=${post.slug})}" th:text="${post.title}" class="text-dark"></a>
+                        </h5>
+                        <p class="text-muted"><i th:text="${#temporals.format(post.publishedAt, 'dd/MM/yyyy')}"></i></p>
+                        <p th:text="${post.description}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h4 class="fw-bold">MOTCHILL</h4>
+                    <p>Motchill - Xem phim Online Vietsub chất lượng cao miễn phí, nhiều thể loại phong phú, đặc sắc, giao diện trực quan...</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">DANH MỤC</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Phim chiếu rạp</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Phim bộ</a></li>
+                        <li><a href="#">Phim lẻ</a></li>
+                        <li><a href="#">TV Show</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">THỂ LOẠI</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Phim cổ trang</a></li>
+                        <li><a href="#">Phim đam mỹ</a></li>
+                        <li><a href="#">Phim bách hợp</a></li>
+                        <li><a href="#">Phim viễn tưởng</a></li>
+                        <li><a href="#">Phim hoạt hình</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">ĐIỀU KHOẢN</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-center">
+                    <h5 class="fw-bold">SOCIAL</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--    <script src="./plugins/bootstrap/bootstrap.bundle.min.js"></script>-->
+</body>
+
+</html>
