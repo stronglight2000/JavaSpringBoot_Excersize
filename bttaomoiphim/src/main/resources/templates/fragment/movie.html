@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:fragment="movieItem(movie)"
+        th:href="'/phim/' + ${movie.id} + '/' + ${movie.slug}">
+    <div class="movie-item">
+        <div class="movie-poster rounded overflow-hidden">
+            <img th:src="${movie.thumbnail}"
+                 th:alt="${movie.name}">
+        </div>
+        <div class="movie-info">
+            <p class="mt-2 mb-0"th:text="${movie.name}">Nhà bà nữ</p>
+        </div>
+    </div>
+</a>
+</body>
+</html>

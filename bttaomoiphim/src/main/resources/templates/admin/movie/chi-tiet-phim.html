@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chi tiết phim</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/admin-assets/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/admin-assets/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="/admin-assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <link rel="stylesheet" href="/admin-assets/plugins/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="/admin-assets/dist/css/style.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <!-- (Bạn có thể reuse nguyên navbar, sidebar như create.html) -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Phim</a></li>
+                            <li class="breadcrumb-item active">Chi tiết phim</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+
+                <div class="row py-2">
+                    <div class="col-6">
+                        <a href="index.html" class="btn btn-default">
+                            <i class="fas fa-chevron-left"></i> Quay lại
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+
+                                        <div class="form-group">
+                                            <label>Tên phim</label>
+                                            <input type="text" class="form-control" id="name" readonly>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Mô tả ngắn</label>
+                                            <textarea id="description" class="form-control" rows="7" readonly></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Trailer</label>
+                                            <input type="text" class="form-control" id="trailer" readonly>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Thể loại</label>
+                                            <select class="form-control select2" id="genre" multiple disabled></select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Đạo diễn</label>
+                                            <select class="form-control select2" id="director" multiple disabled></select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Diễn viên</label>
+                                            <select class="form-control select2" id="actor" multiple disabled></select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <div class="form-group">
+                                            <label>Quốc gia</label>
+                                            <select class="form-control select2" id="country" disabled></select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Loại phim</label>
+                                            <select class="form-control" id="type" disabled>
+                                                <option value="PHIM_BO">Phim bộ</option>
+                                                <option value="PHIM_LE">Phim lẻ</option>
+                                                <option value="PHIM_CHIEU_RAP">Phim chiếu rạp</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Trạng thái</label>
+                                            <select id="status" class="form-control" disabled>
+                                                <option value="false">Nháp</option>
+                                                <option value="true">Công khai</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Năm phát hành</label>
+                                            <input type="text" class="form-control" id="releaseYear" readonly>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Hình ảnh</label>
+                                            <div class="thumbnail-preview-container mb-3">
+                                                <img id="thumbnail" src="" alt="Ảnh phim" style="width: 100%; height: auto; object-fit: cover;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/admin-assets/plugins/jquery/jquery.min.js"></script>
+<script src="/admin-assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/admin-assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/admin-assets/dist/js/adminlte.js"></script>
+<script src="/admin-assets/plugins/select2/js/select2.full.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Khởi tạo Select2
+        $('.select2').select2();
+
+        // Giả lập load dữ liệu phim từ URL (hoặc API)
+        const movieData = {
+            name: "Avengers: Endgame",
+            description: "Trận chiến cuối cùng chống lại Thanos",
+            trailer: "https://youtube.com/trailer-avengers",
+            genres: ["Hành động", "Phiêu lưu"],
+            directors: ["Anthony Russo", "Joe Russo"],
+            actors: ["Robert Downey Jr.", "Chris Evans"],
+            country: "Mỹ",
+            type: "PHIM_CHIEU_RAP",
+            status: true,
+            releaseYear: 2019,
+            thumbnail: "https://linktoyourimage.com/image.jpg"
+        };
+
+        // Đổ dữ liệu vào form
+        $('#name').val(movieData.name);
+        $('#description').val(movieData.description);
+        $('#trailer').val(movieData.trailer);
+
+        $('#genre').append(movieData.genres.map(g => `<option selected>${g}</option>`));
+        $('#director').append(movieData.directors.map(d => `<option selected>${d}</option>`));
+        $('#actor').append(movieData.actors.map(a => `<option selected>${a}</option>`));
+
+        $('#country').append(`<option selected>${movieData.country}</option>`);
+        $('#type').val(movieData.type);
+        $('#status').val(movieData.status.toString());
+        $('#releaseYear').val(movieData.releaseYear);
+        $('#thumbnail').attr('src', movieData.thumbnail);
+    });
+</script>
+
+</body>
+
+</html>
